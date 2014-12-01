@@ -4,12 +4,9 @@ import sys
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
-try:
-    from pypandoc import convert
-    read_md = lambda f: convert(f, 'rst')
-except ImportError:
-    print("warning: pypandoc module not found, could not convert Markdown to RST")
-    read_md = lambda f: open(f, 'r').read()
+def readme():
+    with open('README.rst') as f:
+        return f.read()
 
 setup(name='gisrastertools',
       version='0.1',
@@ -40,5 +37,5 @@ setup(name='gisrastertools',
           'Topic :: Scientific/Engineering :: GIS',
       ],
       zip_safe=False,
-      long_description=read_md('README.md'),
+      long_description=readme(),
       )
