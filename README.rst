@@ -14,11 +14,15 @@ tool to work with GIS raster files. It includes tools to
 Install
 -------
 
+.. code-block:: python
+    
     pip install gisrastertools
    
 Example Usage
 -------------
 
+.. code-block:: python
+    
     from gisrastertools import *
     # Get info on raster
     NDV, xsize, ysize, GeoT, Projection, DataType = get_geo_info(raster)
