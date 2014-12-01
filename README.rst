@@ -39,5 +39,5 @@ Example Usage
     
     # Align two rasters
     data2 = load_tiff(raster2)
-    (alignedraster_o, alignedraster_a, GeoT_a) = AlignRasters(raster, raster2, how=np.mean)
+    (alignedraster_o, alignedraster_a, GeoT_a) = align_rasters(raster, raster2, how=np.mean)
    
