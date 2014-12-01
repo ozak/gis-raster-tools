@@ -1,11 +1,6 @@
 gisrastertools
 ===========
 
-|BuildStatus|_ 
-|CoverageStatus|_
-|PyPiVersion|_
-|PyPiDownloads|_
-
 The ``gisrastertools`` python module provides a fast and flexible
 tool to work with GIS raster files. It includes tools to 
 
